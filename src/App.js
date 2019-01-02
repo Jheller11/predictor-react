@@ -18,12 +18,14 @@ class App extends Component {
     return (
       <div className="App">
         <Nav loggedIn={this.state.loggedIn} />
-        <Switch>
-          <Route exact path="/signup" render={() => <Signup />} />
-          <Route exact path="/login" render={() => <Login />} />
-          <Route exact path="/about" render={() => <About />} />
-          <Route exact path="/" render={() => <Home />} />
-        </Switch>
+        <main>
+          <Switch>
+            <Route exact path="/signup" render={() => <Signup />} />
+            <Route exact path="/login" render={() => <Login />} />
+            <Route exact path="/about" render={() => <About />} />
+            <Route exact path="/" render={() => <Home />} />
+          </Switch>
+        </main>
       </div>
     )
   }

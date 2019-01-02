@@ -1,1 +1,19 @@
 /* top level css */
+
+main {
+  margin: 10px;
+}
+
+body {
+  color: #0f0f0f;
+  background-color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+  color: #055cff;
+}
+
+a:hover {
+  color: #8400c2;
+}
