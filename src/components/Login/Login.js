@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import TextInput from '../TextInput/TextInput'
+import Button from '../Button/Button'
 
 class Login extends Component {
   constructor() {
@@ -7,7 +9,16 @@ class Login extends Component {
   }
 
   render() {
-    return <div>Login form</div>
+    return (
+      <div>
+        <h3>Log In</h3>
+        <form>
+          <TextInput name="email" type="text" label="E-mail Address" />
+          <TextInput name="password" type="password" label="Password" />
+          <Button value="Log In" />
+        </form>
+      </div>
+    )
   }
 }
 
