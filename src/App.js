@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Nav from './components/Nav/Nav'
+import About from './components/About/About'
+import Signup from './components/Signup/Signup'
 import './App.css'
 
 class App extends Component {
@@ -13,14 +15,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>Hello world</div>
         <Nav loggedIn={this.state.loggedIn} />
-        {/* <Switch>
-          <Route path="/signup" render={() => <Signup />} />
-          <Route path="/login" render={() => <Login />} />
-          <Route path="/about" render={() => <About />} />
-          <Route path="/" render={() => <Home />} />
-        </Switch> */}
+        <Switch>
+          <Route exact path="/signup" render={() => <Signup />} />
+          <Route exact path="/login" render={() => <Login />} />
+          <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/" render={() => <Home />} />
+        </Switch>
       </div>
     )
   }
