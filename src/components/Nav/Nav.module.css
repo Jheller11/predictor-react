@@ -1,0 +1,17 @@
+.main-nav {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  min-height: 3em;
+  line-height: 3em;
+  text-align: center;
+}
+
+.link {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.link:hover {
+  background-color: #b9b9b9;
+}
