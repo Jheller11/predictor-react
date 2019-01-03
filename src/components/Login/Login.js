@@ -15,7 +15,8 @@ class Login extends Component {
         <form>
           <TextInput name="email" type="text" label="E-mail Address" />
           <TextInput name="password" type="password" label="Password" />
-          <Button value="Log In" />
+          <Button value="Log In" type="submit" />
+          <Button value="Clear Form" type="reset" />
         </form>
       </div>
     )

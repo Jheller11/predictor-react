@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Button.module.css'
 
-const Button = ({ value, onSubmit }) => {
+const Button = ({ value, type, onSubmit }) => {
   return (
-    <button type="submit" onSubmit={onSubmit}>
+    <button className={styles.btn} type={type} onSubmit={onSubmit}>
       {value}
     </button>
   )
